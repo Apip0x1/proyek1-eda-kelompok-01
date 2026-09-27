@@ -18,27 +18,24 @@ Serangan siber saat ini memiliki banyak variasi, seperti SQL Injection, XSS, CSR
 
 ## Sumber Dataset
 - **Nama File:** `Attack_Dataset.csv`
-- **Sumber/Link:** [Isi dengan link dataset, misal tautan Kaggle]
-- **Lisensi:** [Isi dengan lisensi dataset, misal CC0 / MIT / Public Domain]
-
-*(Catatan: Jika ukuran file dataset melebihi 25 MB, file tidak diunggah ke repositori GitHub. Silakan unduh melalui link di atas dan letakkan file tersebut ke dalam folder `data/` dengan nama `Attack_Dataset.csv` sebelum menjalankan notebook).*
+- **Sumber/Link:** [[Kaggle]](https://www.kaggle.com/datasets/tannubarot/cybersecurity-attack-and-defence-dataset)
+- **Lisensi:** [[MIT]](https://www.mit.edu/~amini/LICENSE.md)
 
 ## 3 Temuan Utama
-1. **Temuan 1:** [Isi dengan kesimpulan dari analisis panjang deskripsi serangan / desc_len]
-2. **Temuan 2:** [Isi dengan kesimpulan dari rata-rata dan variasi jumlah tools / tools_count]
-3. **Temuan 3:** [Isi dengan kesimpulan dari sebaran dan outlier panjang langkah serangan / steps_len]
+1. **Temuan 1:** Rata-rata panjang deskripsi serangan adalah 127,57 karakter. Nilai rata-ratanya lebih besar dari nilai tengahnya (median 103), sehingga sebagian data memiliki deskripsi yang jauh lebih panjang. Penyebaran datanya juga cukup beragam, dengan simpangan baku 90,93 karakter.
+2. **Temuan 2:** Rata-rata jumlah tools yang digunakan dalam satu serangan adalah sekitar 2,94 tools. Nilai ini hampir sama dengan mediannya, yaitu 3 tools, sehingga jumlah tools yang digunakan cenderung cukup stabil, biasanya sekitar 2–3 tools.
+3. **Temuan 3:** Rata-rata panjang langkah serangan adalah 698,13 karakter, sedangkan mediannya 554 karakter. Perbedaan ini menunjukkan bahwa sebagian besar langkah serangan tidak terlalu panjang, tetapi ada beberapa serangan dengan langkah yang sangat panjang, bahkan mencapai 6.003 karakter.
 
 ## Struktur Folder
 
-Saat ini, pengerjaan masih dibagi per anggota sebelum digabungkan menjadi file `eda_kelompok_01.ipynb` di akhir. Struktur foldernya adalah:
-
+Folder `bagi-tugas/` sengaja dibuat untuk melacak riwayat pengerjaan dan memperlihatkan kontribusi masing-masing anggota secara transparan
 ```text
 .
 ├── README.md
 ├── bagi-tugas/
-│   ├── tugas1(rafky).ipynb     # Pengerjaan bagian/pertanyaan 1 oleh Rafky
-│   ├── tugas2(fardhan).ipynb   # Pengerjaan bagian/pertanyaan 2 oleh Fardhan
-│   ├── tugas3(kui_chin).ipynb  # [PLACEHOLDER - Akan diisi oleh Kui Chin]
-│   └── tugas4(Afif).ipynb      # Pengerjaan bagian/pertanyaan 4 oleh Afif
+│   ├── tugas1(rafky).ipynb     # Pengerjaan bagian Rafky
+│   ├── tugas2(fardhan).ipynb   # Pengerjaan bagian Fardhan
+│   ├── tugas3(kui_chin).ipynb  # Pengerjaan bagian Yang Kui Chin
+│   └── tugas4(Afif).ipynb      # Pengerjaan bagian Afif
 └── data/
-    └── Attack_Dataset.csv      # File dataset (Hanya contoh, tidak di-push jika > 25MB)
+    └── Attack_Dataset.csv      
